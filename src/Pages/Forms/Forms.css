@@ -1,0 +1,162 @@
+.containerLeft{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin:0;
+
+}
+
+.leftForm{
+    width: 400px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.leftForm_register{
+    min-width: 400px;
+    padding: 10% 5%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+.leftForm-forgot{
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn{
+    margin-top: 20px !important;
+    width: 56%;
+    height: 40px;
+    background-color:#D268CC !important;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.btn:hover{
+    background-color: #91448d !important;
+}
+
+.loginGiris{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.containerRight{
+     width: 100%;
+
+    /* margin: auto;  */
+/*     align-items: center;
+    justify-content: center; */
+}
+
+
+.fotoRight{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 80vh;
+    display: flex;
+    text-decoration: none;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 50px; */
+}
+
+@media (max-width: 900px) {
+    .fotoRight{
+        display: none;
+    }
+  }
+
+
+
+
+.sifreUnuttum{
+    margin-top: 10px;
+    display: block !important;
+    width: 100% !important;
+    text-align: end;
+}
+
+.unuttum{
+    cursor: pointer;
+    display: inline;
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+.loginKaydol{
+    width: 95%;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.kaydol{
+    display: inline;
+    transition: 1s;
+    color: #D268CC;
+
+}
+
+.kaydol:hover{
+    color: #a3519f !important; 
+    cursor: pointer;
+}
+.notActive{
+    cursor: not-allowed;
+    opacity: 0.6;
+    border:2px red solid !important;
+}
+
+/* Titreme efekti için bir animasyon oluşturun */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) ; }
+    50% { transform: translateX(5px) ; }
+    75% { transform: translateX(-5px) ; }
+    100% { transform: translateX(0); }
+  }
+  
+  /* Butonun üzerine gelindiğinde animasyonu etkinleştirin */
+  .notActive:hover {
+    animation: shake 0.5s infinite; /* 0.5 saniye süren, sonsuz tekrar eden animasyon */
+  }
