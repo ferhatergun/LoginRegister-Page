@@ -52,7 +52,7 @@ const Login = () => {
                             validationSchema={
                                 yup.object({
                                     email:yup.string().email("Lütfen Geçerli Bir Mail Giriniz( @ )").required("Email Boş Bırakilamaz"),
-                                    password:yup.string().min(6,"Şifre En Az 6 Karakterli Olmalıdır").required("Şifre Boş Bırakılamaz"),
+                                    password:yup.string().min(8,"Şifre En Az 8 Karakterli Olmalıdır").required("Şifre Boş Bırakılamaz"),
                                 })
                             }
                             onSubmit={(values,{resetForm})=>{ // form submit olduktan sonra yapılacaklar

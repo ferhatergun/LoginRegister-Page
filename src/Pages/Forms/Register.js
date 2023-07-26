@@ -117,8 +117,8 @@ const Register = () => {
                                     namesurname:yup.string().required("İsim alanı boş bırakılamaz"),
                                     email:yup.string().email("Lütfen Geçerli Bir Mail Giriniz( @ )").required("Email Boş Bırakilamaz") ,
                                     phonenumber:yup.string().min(11,"Eksik numara girdiniz").required("Telefon numarası zorunludur"),
-                                    password:yup.string().min(6,"Şifre En Az 6 Karakterli Olmalıdır").required("Şifre Boş Bırakılamaz"),
-                                    trypassword:yup.string().min(6,"Şifre En Az 6 Karakterli Olmalıdır").oneOf([yup.ref('password')], 'Şifreler Uyuşmuyor').required("Şifre Tekrarı Boş Bırakılamaz"),
+                                    password:yup.string().min(8,"Şifre En Az 8 Karakterli Olmalıdır").required("Şifre Boş Bırakılamaz"),
+                                    trypassword:yup.string().min(8,"Şifre En Az 8 Karakterli Olmalıdır").oneOf([yup.ref('password')], 'Şifreler Uyuşmuyor').required("Şifre Tekrarı Boş Bırakılamaz"),
                                     passwordControl:yup.boolean().required()
                                 })
                             }
