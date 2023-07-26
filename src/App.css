@@ -35,8 +35,10 @@ body {
     border-radius: 10px;
     font-size: 15px;
     margin-bottom: 20px;
+    cursor: pointer;
 
   }
   .loginBtn:hover{
     background-color: rgb(215, 215, 214);
+
   }
