@@ -98,7 +98,6 @@ const Register = () => {
                                 if(values.trypassword === values.password) // şifreler aynı ise form temizlenir
                                 {
                                     if(values.passwordControl===true){
-                                        userRegister(values) //bilgileri database'e göndermek için
                                         console.log(values)
                                     setTimeout(()=>{ // 2 sn sonra formu resetledik
                                         resetForm();
