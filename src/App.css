@@ -4,3 +4,39 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fcfcfc;
   }
+
+  .footerContainer{
+    background-color: rgba(221, 221, 221, 0.538);
+    height:50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+  }
+  .homeContainer{
+
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  .homeButtons{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: aqua; */
+  }
+  .loginBtn{
+    padding:10px 20px 10px 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+  }
+  .loginBtn:hover{
+    background-color: rgb(215, 215, 214);
+  }
