@@ -47,34 +47,6 @@ const Register = () => {
     }
 
 
-    const userRegister=async(values)=>{
-
-          console.log(values)
-        const data={
-            name:"ali",
-            surname:values.namesurname,
-            telephone:values.phonenumber,
-            email:values.email,
-            password:values.password
-        }
-         try{
-            const response = await fetch("http://localhost:5000/users/register",{
-                method:'POST',
-                headers:{
-                    'Content-Type':'application/json'
-                },
-                body:JSON.stringify(data)
-                 }) 
-                 const result = await response.json(); // database den gelen mesaj 
-                 
-                console.log(result)
-
-        }catch(e){
-            console.log(e)
-        }  
-    }
-
-
     const Controlpassword=(values)=>{
         console.log(values)
         if((regexBig.test(values.password) || regexBig.test(values.trypassword))&& 
